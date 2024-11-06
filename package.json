@@ -115,6 +115,6 @@
     "styled-components": "^5"
   },
   "engines": {
-    "node": "18.19.0"
+    "node": "18.20.4"
   }
 }
