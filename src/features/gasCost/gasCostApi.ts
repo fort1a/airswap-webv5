@@ -14,7 +14,7 @@ import uniswapFactoryAbi from "../../uniswap/abis/factory.json";
 import uniswapPairAbi from "../../uniswap/abis/pair.json";
 import uniswapDeploys from "../../uniswap/deployments";
 
-export const gasUsedPerSwap = 185555;
+export const gasUsedPerSwap = 185555; //previous amount was 185555
 
 const endpoints: Partial<Record<ChainIds, GasPriceEndpoint>> = {
   [ChainIds.MAINNET]: {
@@ -24,6 +24,11 @@ const endpoints: Partial<Record<ChainIds, GasPriceEndpoint>> = {
   [ChainIds.SEPOLIA]: {
     type: GasPriceEndpointType.beaconCha,
     url: "https://sepolia.beaconcha.in/api/v1/execution/gasnow",
+  },
+  [ChainIds.HOLESKY]: {
+    type: GasPriceEndpointType.beaconCha,
+    url: "https://holesky.beaconcha.in/api/v1/execution/gasnow",
+    // url: "https://gas.api.infura.io/v3/43eeb715d9f34d2a9333b23af8a38076",
   },
 };
 

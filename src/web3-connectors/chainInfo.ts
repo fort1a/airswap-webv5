@@ -29,6 +29,12 @@ export const chainInfo: Record<SupportedNetwork, ChainInfo> = {
     nativeCurrency: nativeCurrency[ChainIds.SEPOLIA] as NativeCurrencyTokenInfo,
     rpcUrl: rpcUrls[ChainIds.SEPOLIA] as string,
   },
+  [ChainIds.HOLESKY]: {
+    explorer: "https://holesky.etherscan.io/",
+    label: "Holesky",
+    nativeCurrency: nativeCurrency[ChainIds.HOLESKY] as NativeCurrencyTokenInfo,
+    rpcUrl: rpcUrls[ChainIds.HOLESKY] as string,
+  },
   [ChainIds.POLYGON]: {
     explorer: "https://polygonscan.com/",
     label: "Polygon",
